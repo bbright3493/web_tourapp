@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="../static/css/swiper.min.css">
+
+
+    <title>目的地主页</title>
+</head>
+<body>
+
+<div class="header">
+    <button type="button" class="dest_tag">目的地标签</button>
+    <button type="button" class="dest_add">添加目的地</button>
+
+</div>
+
+<div class="header1">
+    <select>
+        <option value="volvo">成都</option>
+        <option value="saab">西安</option>
+    </select>
+
+    <form action="" method="get">
+        <input type="text" name="fname"/>
+        <input type="submit" value="提交"/>
+    </form>
+</div>
+
+<div class="dest_content">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><image src="../static/image/1.jpg"/>
+                <div class="dest_info"><p>九寨沟</p><p>距离</p><p>点赞数</p></div>
+                <div class="publisher"><p>小黄</p><p>发布时间</p><p>金币数</p></div>
+            </div>
+            <div class="swiper-slide"><image src="../static/image/2.jpg"/><p>黄山</p></div>
+            <div class="swiper-slide"><image src="../static/image/3.jpg"/><p>海南</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="dest_active">
+    <div class="swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <button type="button" class="dest_tag">活动1</button></div>
+            <div class="swiper-slide"><button type="button" class="dest_tag">活动2</button></div>
+            <div class="swiper-slide"><button type="button" class="dest_tag">活动3</button></div>
+            <div class="swiper-slide"><button type="button" class="dest_tag">活动4</button></div>
+            <div class="swiper-slide"><button type="button" class="dest_tag">活动5</button></div>
+            <div class="swiper-slide"><button type="button" class="dest_tag">活动6</button></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../static/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+    });
+    var swiper1 = new Swiper('.swiper-container1', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+    });
+</script>
+
+</body>
+</html>
